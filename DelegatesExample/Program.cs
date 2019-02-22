@@ -10,6 +10,13 @@ namespace DelegatesExample
     {
         static void Main(string[] args)
         {
+            MyMath.MathOperation mathOp;
+
+            mathOp = MyMath.Multiply;
+            Console.WriteLine(mathOp(3, 4));
+
+            mathOp = (a, b) => { return a + b; };
+            Console.WriteLine(mathOp(3, 4));
         }
     }
 }
