@@ -15,7 +15,7 @@ namespace DelegatesExample
             mathOp = MyMath.Multiply;
             Console.WriteLine(mathOp(3, 4));
 
-            mathOp = (a, b) => { return a + b; };
+            mathOp = (a, b) => { return a + b; }; //udskifter en metode med en ny logik, kan lade sig gøre pga. delegate
             Console.WriteLine(mathOp(3, 4));
         }
     }
